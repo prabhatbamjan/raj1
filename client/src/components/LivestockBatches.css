@@ -1,0 +1,219 @@
+/* Container */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Add Button - Positioned on the Top Right */
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+/* Form Overlay Background */
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Show Form Overlay */
+.form-overlay.show {
+  opacity: 1;
+}
+
+/* Centered Form - Hover Above List */
+.form-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  z-index: 1010;
+  transition: transform 0.3s ease;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Form Input Styles */
+.form-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Table Section */
+.list-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* List Title */
+.list-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+/* Search and Filter Section (Below the Batch List Heading) */
+.search-filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 14px;
+  transition: width 0.3s ease;
+}
+
+.search-input:focus {
+  width: 300px;
+  outline: none;
+  border-color: #28a745;
+}
+
+/* Filter Select */
+.filter-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-row {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+.table-row:hover {
+  background-color: #f1f1f1;
+}
+
+.table-cell {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.action-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

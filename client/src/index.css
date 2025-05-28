@@ -1,0 +1,174 @@
+:root {
+  --system-primary: #1976d2;
+  --system-secondary: #f0f2f5;
+  --system-text: #333333;
+  --system-border: #e0e0e0;
+  --system-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background-color: var(--system-secondary);
+  color: var(--system-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* System-like scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--system-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* System-like focus styles */
+:focus {
+  outline: 2px solid var(--system-primary);
+  outline-offset: 2px;
+}
+
+/* System-like button styles */
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* System-like input styles */
+input, select, textarea {
+  font-family: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--system-border);
+  border-radius: 4px;
+  background-color: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--system-primary);
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+/* System-like card styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--system-shadow);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* System-like table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--system-border);
+}
+
+th {
+  background-color: var(--system-secondary);
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* System-like link styles */
+a {
+  color: var(--system-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+/* System-like loading animation */
+@keyframes system-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--system-secondary);
+  border-top-color: var(--system-primary);
+  border-radius: 50%;
+  animation: system-spin 1s linear infinite;
+}
+
+/* System-like transitions */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+}
+
+/* System-like responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .card {
+    padding: 12px;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+}
